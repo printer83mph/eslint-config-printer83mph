@@ -15,9 +15,9 @@ specifiers:
   eslint-plugin-react: ^7.28.0
   eslint-plugin-react-hooks: ^4.3.0
   eslint-plugin-unused-imports: ^2.0.0
-  react: ^18.2.0
-  react-dom: ^18.2.0
-  typescript: ^4.8.4
+  react: '*'
+  react-dom: '*'
+  typescript: '*'
 
 devDependencies:
   '@typescript-eslint/eslint-plugin': 5.13.0_lv25s5vmgdpuhkypagenq5uvcu
