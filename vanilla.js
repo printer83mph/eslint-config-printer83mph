@@ -1,22 +1,7 @@
+// base eslint config for non-typescript projects (ew)
 module.exports = {
-  extends: ['airbnb'],
+  extends: ['airbnb', 'prettier'],
   plugins: ['unused-imports'],
-  // typescript file rules
-  overrides: [
-    {
-      files: ['*.ts', '*.tsx'],
-      extends: ['airbnb-typescript', 'airbnb/hooks'],
-      rules: {
-        '@typescript-eslint/no-unused-vars': ['warn'],
-        '@typescript-eslint/no-shadow': ['warn'],
-      },
-    },
-    {
-      files: ['*'],
-      extends: ['prettier'],
-    },
-  ],
-  // global rules
   rules: {
     'react/require-default-props': 'off',
     'react/jsx-props-no-spreading': 'off',

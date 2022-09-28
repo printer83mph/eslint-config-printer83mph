@@ -4,10 +4,17 @@
   "description": "printer's Custom ESLint config",
   "main": "index.js",
   "files": [
-    "next.js"
+    "next.js",
+    "vanilla.js"
   ],
   "author": "Thomas Shaw <printer.83mph@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "npm run test:base && npm run test:next && npm run test:vanilla",
+    "test:base": "eslint ./test/silly.js -c index.js",
+    "test:next": "eslint ./test/silly.js -c next.js",
+    "test:vanilla": "eslint ./test/silly.js -c vanilla.js"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "5.13.0",
     "@typescript-eslint/parser": "5.13.0",
@@ -19,7 +26,11 @@
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0",
-    "eslint-plugin-react-hooks": "^4.3.0"
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.8.4"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "5.13.0",
@@ -32,6 +43,19 @@
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0",
-    "eslint-plugin-react-hooks": "^4.3.0"
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.8.4"
+  },
+  "pnpm": {
+    "packageExtensions": {
+      "eslint-config-next@*": {
+        "dependencies": {
+          "next": "*"
+        }
+      }
+    }
   }
 }
