@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-printer83mph",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "printer's Custom ESLint config",
   "main": "index.js",
   "files": [
