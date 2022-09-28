@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-printer83mph",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "printer's Custom ESLint config",
   "main": "index.js",
   "files": [
@@ -14,10 +14,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "test": "npm run test:base && npm run test:next && npm run test:vanilla",
-    "test:base": "eslint ./test/silly.js -c index.js",
-    "test:next": "eslint ./test/silly.js -c next.js",
-    "test:vanilla": "eslint ./test/silly.js -c vanilla.js"
+    "test": "eslint ./test/silly.js -c vanilla.js"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "5.13.0",
@@ -31,10 +28,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
-    "eslint-plugin-unused-imports": "^2.0.0",
-    "react": "*",
-    "react-dom": "*",
-    "typescript": "*"
+    "eslint-plugin-unused-imports": "^2.0.0"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "5.13.0",
@@ -48,10 +42,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
-    "eslint-plugin-unused-imports": "^2.0.0",
-    "react": "*",
-    "react-dom": "*",
-    "typescript": "*"
+    "eslint-plugin-unused-imports": "^2.0.0"
   },
   "pnpm": {
     "packageExtensions": {
