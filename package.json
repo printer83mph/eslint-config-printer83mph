@@ -8,6 +8,10 @@
     "vanilla.js"
   ],
   "author": "Thomas Shaw <printer.83mph@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/printer83mph/eslint-config-printer83mph.git"
+  },
   "license": "MIT",
   "scripts": {
     "test": "npm run test:base && npm run test:next && npm run test:vanilla",
