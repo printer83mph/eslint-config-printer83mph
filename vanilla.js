@@ -1,5 +1,6 @@
 // base eslint config for non-typescript projects (ew)
 module.exports = {
+  root: true,
   extends: ['airbnb', 'prettier'],
   plugins: ['unused-imports'],
   rules: {

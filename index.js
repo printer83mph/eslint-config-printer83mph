@@ -1,5 +1,6 @@
 // base eslint config for any project using typescript
 module.exports = {
+  root: true,
   extends: ['airbnb'],
   plugins: ['unused-imports'],
   // typescript file rules

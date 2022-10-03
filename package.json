@@ -55,9 +55,6 @@
           "react-dom": "*"
         }
       }
-    },
-    "overrides": {
-      "eslint-config-next@*>eslint-plugin-import": "^2.26.0"
     }
   }
 }
