@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-printer83mph",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "printer's Custom ESLint config",
   "main": "index.js",
   "files": [
@@ -44,5 +44,16 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-unused-imports": "^2.0.0",
     "next": "^12.3.1"
+  },
+  "pnpm": {
+    "packageExtensions": {
+      "eslint-config-next": {
+        "dependencies": {
+          "next": "*",
+          "react": "*",
+          "react-dom": "*"
+        }
+      }
+    }
   }
 }
